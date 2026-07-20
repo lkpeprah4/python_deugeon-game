@@ -1,6 +1,6 @@
 import random
 
-# -------------------- Functions -------------------- #
+#FUNCTIONS
 def battle_monster(health, gold, active_effects, inventory, player_name):
     monster_health = random.randint(20, 40)
     print(f"A wild monster appears with {monster_health} HP!")
@@ -84,7 +84,7 @@ def use_item(health, active_effects, inventory):
     return health, active_effects, inventory
 
 
-# -------------------- Main Game -------------------- #
+#MAIN GAME
 def main():
     player_name = input("Enter your adventurer's name: ").title()
     health, gold = 100, 50
